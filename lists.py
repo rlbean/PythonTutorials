@@ -11,3 +11,5 @@ print(fruits[1:4]) # ['oranges', 'pears', 'kiwi']
 #print(numbers[1]) # output -- 2
 #print(numbers[0]) #output -- 22
 #print(mixedList[1]) # output -- 10
+
+# lists are not changeable after creation.
