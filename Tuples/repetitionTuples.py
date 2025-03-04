@@ -24,7 +24,8 @@ def generateEventSchedule(event_topics, num_repetitions):
     
 
     print("\nFull Conference Schedule:")
-    #make a list 
+    #make a list -- loop includes 2 items day and topic
+    #enumerate works through whole tuples combo. 
     for day, topic in enumerate(repeated_schedule, 1):
         print(f"Day {day}: {topic}")
         # Day 1: Machine Learning Fundamentals
