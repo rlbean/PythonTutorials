@@ -28,3 +28,7 @@ print(points)
 print(colours[1])
 print(colours[-1])
 print(colours)
+
+votes = ("Yes", "No", "No", "No", "Yes")
+print(votes.count("Yes")) # 2
+print(votes.count("No")) # 3
