@@ -1,13 +1,22 @@
 import tkinter as tk # starts out the visual app
 
+def say_hello():
+    label2.config(text="My favourite colour is " + entry.get())
+
 window = tk.Tk() # creates the window
 window.title("Bean's Great App!") # window title bar
+window.geometry("400x300")  # Make the window bigger w x h
 
-label = tk.Label(window, text="Hello World!")
-label2 = tk.Label(window, text="Message 2")
-label2.pack()
+label = tk.Label(window, text="What is your favourite colour?")
+label2 = tk.Label(window, text="")
 label.pack()
+label2.pack()
 
+entry = tk.Entry(window) # text box entry 
+entry.pack() # adds to the window and lays
+
+button = tk.Button(window, text="Click Me", command=say_hello)
+button.pack()
 
 window.mainloop()
 
